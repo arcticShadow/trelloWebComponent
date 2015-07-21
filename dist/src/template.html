@@ -1,0 +1,17 @@
+
+<table class="trelloWebComponent">
+  <thead>
+    <tr>
+      <th width="1"></th>
+      <th width="3">Key</th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody><% _.forEach(issues, function(issue) { %>
+    <tr>
+      <td><img src="<%= issue.fields.issuetype.iconUrl %>"/></td>
+      <td><%= issue.key %></td>
+      <td><%= issue.fields.summary %></td>
+    </tr><% }) %>
+  </tbody>
+</table>

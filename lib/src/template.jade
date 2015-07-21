@@ -1,0 +1,16 @@
+table.trelloWebComponent
+  thead
+    tr
+      th(width=1)
+      th(width=3) Key
+      th Summary
+  tbody
+    | <% _.forEach(issues, function(issue) { %>
+    tr
+      td
+        img(src!='<%= issue.fields.issuetype.iconUrl %>')
+      td
+        | <%= issue.key %>
+      td
+        | <%= issue.fields.summary %>
+    | <% }) %>
