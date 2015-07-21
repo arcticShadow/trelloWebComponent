@@ -2,7 +2,7 @@
 
 <!-- Start lib/trelloWebComponent.js -->
 
-# terlloWebComponent.js
+# trelloWebComponent.js
 
 This file contains the render functions for Trello content
 

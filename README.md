@@ -1,4 +1,4 @@
-# Jira Web Component
+# Trello Web Component
 
 ## Usage
 
