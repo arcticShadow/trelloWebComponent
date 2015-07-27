@@ -1,16 +1,10 @@
 table.trelloWebComponent
   thead
     tr
-      th(width=1)
-      th(width=3) Key
-      th Summary
+      th Cards
   tbody
-    | <% _.forEach(issues, function(issue) { %>
+    | <% _.forEach(cards, function(card) { %>
     tr
       td
-        img(src!='<%= issue.fields.issuetype.iconUrl %>')
-      td
-        | <%= issue.key %>
-      td
-        | <%= issue.fields.summary %>
+        | <%= card.name %>
     | <% }) %>

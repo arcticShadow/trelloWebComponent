@@ -11,8 +11,7 @@
     "email": "cole.diffin@gmail.com",
     "url": "https://github.com/arcticShadow"
   },
-  "browser": "./dist/trelloWebComponent.min.js",
-  "main": "./lib/trelloWebComponent.js",
+  "main": "./dist/trelloWebComponent.min.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:arcticShadow/trelloWebComponent.git"
@@ -50,15 +49,9 @@
 
   },
   "devDependencies": {
-    "trello":"*",
-    "brfs": "*",
-    "browserify": "^4.1.5",
-    "function-bind": "^0.1.0",
+    "gulp-brfs":"*",
     "gulp": "^3.5.1",
-    "gulp-autoprefixer": "^1.0.1",
-    "gulp-browserify": "^0.5.0",
     "gulp-clean": "^0.2.4",
-    "gulp-header": "^1.0.2",
     "gulp-jade": "^0.6.1",
     "gulp-markdox": "^0.1.1",
     "gulp-rename": "^1.2.0",

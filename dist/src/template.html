@@ -2,16 +2,12 @@
 <table class="trelloWebComponent">
   <thead>
     <tr>
-      <th width="1"></th>
-      <th width="3">Key</th>
-      <th>Summary</th>
+      <th>Cards</th>
     </tr>
   </thead>
-  <tbody><% _.forEach(issues, function(issue) { %>
+  <tbody><% _.forEach(cards, function(card) { %>
     <tr>
-      <td><img src="<%= issue.fields.issuetype.iconUrl %>"/></td>
-      <td><%= issue.key %></td>
-      <td><%= issue.fields.summary %></td>
+      <td><%= card.name %></td>
     </tr><% }) %>
   </tbody>
 </table>
