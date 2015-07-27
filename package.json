@@ -45,16 +45,14 @@
     "lodash.template": "*",
     "superagent": "^1.2.0"
   },
-  "peerDependencies": {
-
-  },
   "devDependencies": {
-    "gulp-brfs":"*",
     "gulp": "^3.5.1",
+    "gulp-brfs": "*",
     "gulp-clean": "^0.2.4",
     "gulp-jade": "^0.6.1",
     "gulp-markdox": "^0.1.1",
     "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^0.3.0"
+    "gulp-uglify": "^0.3.0",
+    "vinyl-transform": "^1.0.0"
   }
 }

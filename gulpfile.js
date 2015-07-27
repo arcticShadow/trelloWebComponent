@@ -4,7 +4,9 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
   uglify = require('gulp-uglify'),
   jade = require('gulp-jade'),
-  brfs = require('gulp-brfs'),
+  brfs = require('brfs'),
+
+  transform = require('vinyl-transform'),
   markdox = require('gulp-markdox');
   // pkg = require('./package.json'),
   // template = require('lodash.template');
@@ -34,14 +36,15 @@ gulp.task('clean:jade', function() {
 
 gulp.task('compile:js', ['clean:js', 'compile:jade'], function() {
   return gulp.src('lib/trelloWebComponent.js')
+    .pipe(transform(brfs))
     .pipe(rename('trelloWebComponent.min.js'))
     .pipe(uglify())
-    .pipe(brfs())
     .pipe(gulp.dest('dist'));
 });
+
 gulp.task('brfs',function(){
-return gulp.src('lib/trelloWebComponent.js')
-    .pipe(brfs())
+  return gulp.src('lib/trelloWebComponent.js')
+    .pipe(transform(brfs))
     .pipe(gulp.dest('dist'));
 
 });
