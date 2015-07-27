@@ -30,7 +30,7 @@
   ],
   "keywords": [
     "WebComponent",
-    "jira"
+    "trello"
   ],
   "maintainers": [
     {
@@ -41,13 +41,13 @@
   "directories": {},
   "dependencies": {
     "bluebird": "^2.9.30",
+    "lodash": "^3.10.0",
     "request": "^2.57.0",
-    "lodash.template": "*",
     "superagent": "^1.2.0"
   },
   "devDependencies": {
+    "brfs":"*",
     "gulp": "^3.5.1",
-    "gulp-brfs": "*",
     "gulp-clean": "^0.2.4",
     "gulp-jade": "^0.6.1",
     "gulp-markdox": "^0.1.1",
